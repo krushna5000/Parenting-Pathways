@@ -4,7 +4,8 @@
 node_modules/
 
 # Expo
-.expo/
+.expo/*
+!.expo/.gitkeep
 dist/
 web-build/
 
