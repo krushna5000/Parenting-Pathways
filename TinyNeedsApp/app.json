@@ -47,12 +47,12 @@
       },
       "eas": {
         "projectId": "ef0aed02-4a67-4cc8-920d-78d5e0c84526"
-      }
+      },
+      "keywords": ["baby", "parenting", "e-commerce", "shopping", "childcare", "products"]
     },
     "owner": "kru5000",
     "privacy": "public",
     "description": "A comprehensive baby care and parenting products e-commerce app. Shop for baby essentials, parenting tips, and track your child's development with our curated selection of high-quality products.",
-    "keywords": ["baby", "parenting", "e-commerce", "shopping", "childcare", "products"],
     "primaryColor": "#1BC464"
   }
 }
