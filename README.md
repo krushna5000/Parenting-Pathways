@@ -1,8 +1,3 @@
-Here is a **well-structured, clean, and professional README** *without technical content* — only about the **TinyNeed App**.
-Perfect for showcasing your project in college or on GitHub.
-
----
-
 # 🍼 TinyNeed
 
 ### **Your One-Stop App for All Baby Essentials**
