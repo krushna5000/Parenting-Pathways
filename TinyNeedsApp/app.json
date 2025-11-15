@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Hello Parents - Baby Care Shop",
+    "scheme": "rn-shop",
+    "slug": "e-commerce",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kru5000.rnshop"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.kru5000.rnshop",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.POST_NOTIFICATIONS"
+      ],
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ef0aed02-4a67-4cc8-920d-78d5e0c84526"
+      }
+    },
+    "owner": "kru5000",
+    "privacy": "public",
+    "description": "A comprehensive baby care and parenting products e-commerce app. Shop for baby essentials, parenting tips, and track your child's development with our curated selection of high-quality products.",
+    "keywords": ["baby", "parenting", "e-commerce", "shopping", "childcare", "products"],
+    "primaryColor": "#1BC464"
+  }
+}
