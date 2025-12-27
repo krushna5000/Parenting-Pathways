@@ -14,6 +14,7 @@ import { useCartStore } from '../store/cart-store';
 import { supabase } from '../lib/supabase';
 import { Tables } from '../types/database.types';
 
+
 export const ListHeader = ({
   categories,
 }: {

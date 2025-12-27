@@ -47,6 +47,15 @@ const TabsLayout = () => {
           }}
         />
         <Tabs.Screen
+          name='baby-care'
+          options={{
+            title: 'Baby Care',
+            tabBarIcon({ color }) {
+              return <TabBarIcon name='heart' color={color} size={26} />;
+            },
+          }}
+        />
+        <Tabs.Screen
           name='orders'
           options={{
             title: 'Orders',
