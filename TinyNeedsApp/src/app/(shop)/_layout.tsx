@@ -64,15 +64,6 @@ const TabsLayout = () => {
             },
           }}
         />
-        <Tabs.Screen
-          name='settings'
-          options={{
-            title: 'Settings',
-            tabBarIcon({ color }) {
-              return <TabBarIcon name='cog' color={color} size={26} />;
-            },
-          }}
-        />
       </Tabs>
     </SafeAreaView>
   );

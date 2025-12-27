@@ -1,10 +1,39 @@
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Pressable } from 'react-native';
+import { Link } from 'expo-router';
 
 export default function BabyCare() {
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <Text style={styles.title}>Baby Care Guide</Text>
       <Text style={styles.subtitle}>Simple, trusted tips for everyday care</Text>
+
+      <View style={styles.quickActions}>
+        <Link href='/(shop)/baby-care-age-guides' asChild>
+          <Pressable style={styles.quickAction}>
+            <Text style={styles.quickActionText}>Age Guides</Text>
+          </Pressable>
+        </Link>
+        <Link href='/(shop)/baby-care-vaccinations' asChild>
+          <Pressable style={styles.quickAction}>
+            <Text style={styles.quickActionText}>Vaccinations</Text>
+          </Pressable>
+        </Link>
+        <Link href='/(shop)/baby-care-growth' asChild>
+          <Pressable style={styles.quickAction}>
+            <Text style={styles.quickActionText}>Growth</Text>
+          </Pressable>
+        </Link>
+        <Link href='/(shop)/baby-care-checklists' asChild>
+          <Pressable style={styles.quickAction}>
+            <Text style={styles.quickActionText}>Checklists</Text>
+          </Pressable>
+        </Link>
+        <Link href='/(shop)/baby-care-learning' asChild>
+          <Pressable style={styles.quickAction}>
+            <Text style={styles.quickActionText}>Learning</Text>
+          </Pressable>
+        </Link>
+      </View>
 
       <Section title="Newborn Basics">
         <Bullet>Wash hands before touching your baby.</Bullet>
@@ -96,6 +125,25 @@ const styles = StyleSheet.create({
   content: {
     padding: 16,
     paddingBottom: 32,
+  },
+  quickActions: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 10,
+    marginTop: 12,
+  },
+  quickAction: {
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    backgroundColor: '#F3F4F6',
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: '#E5E7EB',
+  },
+  quickActionText: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: '#111827',
   },
   title: {
     fontSize: 24,
