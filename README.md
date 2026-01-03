@@ -66,3 +66,9 @@ TinyNeed is designed for:
 * Saves time for busy parents
 * All baby needs in one place
 * Stress-free shopping experience
+
+---
+
+🔗 **LinkedIn**: https://linkedin.com/in/krushna5000  
+🌐 **Portfolio**: https://krushna5000.github.io/Portfolio/
+
