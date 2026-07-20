@@ -8,7 +8,7 @@ import {
   FlatList,
   Image,
 } from 'react-native';
-import { useCartStore } from '../store/cart-store';
+import { useCartStore } from '../modules/cart/cart-store';
 import { StatusBar } from 'expo-status-bar';
 import { useRouter } from 'expo-router';
 

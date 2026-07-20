@@ -5,9 +5,11 @@ import QueryProvider from '../providers/query-provider';
 import { StripeProvider } from '@stripe/stripe-react-native';
 import NotificationProvider from '../providers/notification-provider';
 import TermsProvider from '../providers/terms-provider';
+import { ErrorBoundary } from '../components/error-boundary';
 
 export default function RootLayout() {
   return (
+    <ErrorBoundary>
     <ToastProvider>
       <TermsProvider>
         <AuthProvider>
@@ -65,5 +67,6 @@ export default function RootLayout() {
         </AuthProvider>
       </TermsProvider>
     </ToastProvider>
+    </ErrorBoundary>
   );
 }

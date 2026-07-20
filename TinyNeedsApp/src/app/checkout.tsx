@@ -11,8 +11,9 @@ import {
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { useRouter } from 'expo-router';
-import { useCartStore } from '../store/cart-store';
-import { createOrder, createOrderItem, getMyProfile, updateMyAddress } from '../api/api';
+import { useCartStore } from '../modules/cart/cart-store';
+import { createOrder, createOrderItem } from '../modules/orders/orders.api';
+import { getMyProfile, updateMyAddress } from '../modules/profile/profile.api';
 import { openStripeCheckout, setupStripePaymentSheet } from '../lib/stripe';
 import { Tables } from '../types/database.types';
 

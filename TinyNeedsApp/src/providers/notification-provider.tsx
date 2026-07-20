@@ -6,6 +6,8 @@ import { supabase } from '../lib/supabase';
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowAlert: true,
+    shouldShowBanner: true,
+    shouldShowList: true,
     shouldPlaySound: false,
     shouldSetBadge: false,
   }),
@@ -16,8 +18,12 @@ const NotificationProvider = ({ children }: PropsWithChildren) => {
   const [notification, setNotification] = useState<
     Notifications.Notification | undefined
   >(undefined);
-  const notificationListener = useRef<Notifications.Subscription>();
-  const responseListener = useRef<Notifications.Subscription>();
+  const notificationListener = useRef<Notifications.Subscription | undefined>(
+    undefined
+  );
+  const responseListener = useRef<Notifications.Subscription | undefined>(
+    undefined
+  );
 
   const saveUserPushNotificationToken = async (token: string) => {
     if (!token.length) return;
@@ -55,12 +61,8 @@ const NotificationProvider = ({ children }: PropsWithChildren) => {
       });
 
     return () => {
-      notificationListener.current &&
-        Notifications.removeNotificationSubscription(
-          notificationListener.current
-        );
-      responseListener.current &&
-        Notifications.removeNotificationSubscription(responseListener.current);
+      notificationListener.current?.remove();
+      responseListener.current?.remove();
     };
   }, []);
 

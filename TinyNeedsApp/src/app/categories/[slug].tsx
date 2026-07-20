@@ -8,8 +8,8 @@ import {
 } from 'react-native';
 import { Redirect, Stack, useLocalSearchParams } from 'expo-router';
 
-import { ProductListItem } from '../../components/product-list-item';
-import { getCategoryAndProducts } from '../../api/api';
+import { ProductListItem } from '../../modules/products/product-list-item';
+import { getCategoryAndProducts } from '../../modules/products/products.api';
 
 const Category = () => {
   const { slug } = useLocalSearchParams<{ slug: string }>();

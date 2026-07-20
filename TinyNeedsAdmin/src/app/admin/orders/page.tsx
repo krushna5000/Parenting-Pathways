@@ -1,5 +1,5 @@
-import { getOrdersWithProducts } from '@/actions/orders';
-import PageComponent from '@/app/admin/orders/page-component';
+import { getOrdersWithProducts } from '@/modules/orders/orders.actions';
+import PageComponent from '@/modules/orders/orders-page';
 
 const Orders = async () => {
   const ordersWithProducts = await getOrdersWithProducts();

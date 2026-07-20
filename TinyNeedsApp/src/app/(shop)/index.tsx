@@ -6,10 +6,9 @@ import {
   Text,
 } from 'react-native';
 
-import { PRODUCTS } from '../../../assets/products';
-import { ProductListItem } from '../../components/product-list-item';
+import { ProductListItem } from '../../modules/products/product-list-item';
 import { ListHeader } from '../../components/list-header';
-import { getProductsAndCategories } from '../../api/api';
+import { getProductsAndCategories } from '../../modules/products/products.api';
 
 const Home = () => {
   const { data, error, isLoading } = getProductsAndCategories();

@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
-import { useCartStore } from '../store/cart-store';
+import { useCartStore } from '../modules/cart/cart-store';
 import { Tables } from '../types/database.types';
 import { useAuth } from '../providers/auth-provider';
 

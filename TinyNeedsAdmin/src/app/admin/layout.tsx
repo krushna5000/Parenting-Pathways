@@ -1,8 +1,8 @@
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { RenderMounted } from '@/components/render-mounted';
-import { ADMIN } from '@/constants/contants';
-import { createClient } from '@/supabase/server';
+import { ADMIN } from '@/config/constants';
+import { createClient } from '@/db/supabase/server';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
 
@@ -11,7 +11,7 @@ export default async function AdminLayout({
 }: Readonly<{
   children: ReactNode;
 }>) {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const { data: authData } = await supabase.auth.getUser();
 

@@ -17,7 +17,7 @@ import { Input } from '@/components/ui/input';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { useTheme } from 'next-themes';
-import { createClient } from '@/supabase/client';
+import { createClient } from '@/db/supabase/client';
 
 const NAV_LINKS = [
   { href: '/admin/dashboard', label: 'Dashboard' },

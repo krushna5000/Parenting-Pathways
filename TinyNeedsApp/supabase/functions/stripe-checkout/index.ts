@@ -3,7 +3,8 @@
 // This enables autocomplete, go to definition, etc.
 
 // Setup type definitions for built-in Supabase Runtime APIs
-import 'jsr:@supabase/functions-js/edge-runtime.d.import Stripe from "npm:stripe@12.12.0";
+import 'jsr:@supabase/functions-js/edge-runtime.d.ts';
+import Stripe from "npm:stripe@12.12.0";
 import { getOrCreateStripeCustomerForSupabaseUser } from '../supabase';
 
 
@@ -32,7 +33,6 @@ Deno.serve(async (req: Request) => {
     console.log("Stripe Key Present:", !!stripeKey);
 
     const customer = await getOrCreateStripeCustomerForSupabaseUser(req);
-eStripeCustonerForSupabaseUser(req);
     console.log("Customer:", customer);
 
     const ephemeralKey = await stripe.ephemeralKeys.create(

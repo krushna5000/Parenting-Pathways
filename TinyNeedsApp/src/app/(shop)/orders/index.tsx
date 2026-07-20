@@ -14,7 +14,7 @@ import { Link, Stack } from 'expo-router';
 import { format } from 'date-fns';
 
 import { Tables } from '../../../types/database.types';
-import { getMyOrders } from '../../../api/api';
+import { getMyOrders } from '../../../modules/orders/orders.api';
 
 const openTracking = async (url?: string | null) => {
   try {

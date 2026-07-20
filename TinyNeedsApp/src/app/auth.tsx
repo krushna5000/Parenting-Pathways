@@ -257,7 +257,7 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   overlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     backgroundColor: 'rgba(0,0,0,0.7)',
   },
   scrollContainer: {

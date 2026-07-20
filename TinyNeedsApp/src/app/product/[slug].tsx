@@ -10,8 +10,8 @@ import {
 import { useToast } from 'react-native-toast-notifications';
 import { useState } from 'react';
 
-import { useCartStore } from '../../store/cart-store';
-import { getProduct } from '../../api/api';
+import { useCartStore } from '../../modules/cart/cart-store';
+import { getProduct } from '../../modules/products/products.api';
 import { ActivityIndicator } from 'react-native';
 
 const ProductDetails = () => {

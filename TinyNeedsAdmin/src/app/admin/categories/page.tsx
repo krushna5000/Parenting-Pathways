@@ -1,5 +1,5 @@
-import { getCategoriesWithProducts } from '@/actions/categories';
-import CategoryPageComponent from '@/app/admin/categories/page-component';
+import { getCategoriesWithProducts } from '@/modules/categories/categories.actions';
+import CategoryPageComponent from '@/modules/categories/categories-page';
 
 export default async function Categories() {
   const categories = await getCategoriesWithProducts();

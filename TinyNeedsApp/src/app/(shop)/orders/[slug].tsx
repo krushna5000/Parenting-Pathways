@@ -12,8 +12,7 @@ import {
   Linking,
 } from 'react-native';
 
-import { ORDERS } from '../../../../assets/orders';
-import { getMyOrder } from '../../../api/api';
+import { getMyOrder } from '../../../modules/orders/orders.api';
 import { format } from 'date-fns';
 
 const OrderDetails = () => {
